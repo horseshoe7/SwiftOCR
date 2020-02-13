@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
     SwiftOCR is a fast and simple OCR library written in Swift. It uses a neural network for image recognition. As of now, SwiftOCR is optimized for recognizing short, one line long alphanumeric codes (e.g. DI4C9CM). We currently support iOS and OS X.
                    DESC
 
-  s.homepage     = "https://github.com/garnele007/SwiftOCR"
+  s.homepage     = "https://github.com/horseshoe7/SwiftOCR"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/garnele007/SwiftOCR.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/horseshoe7/SwiftOCR", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -131,7 +131,8 @@ Pod::Spec.new do |s|
 
   # s.requires_arc = true
 
-  s.xcconfig = { "SWIFT_VERSION" => "3.0.1" }
+  s.dependency 'GPUImage'
+  s.xcconfig = { "SWIFT_VERSION" => "5.0" }
   
 
 end
